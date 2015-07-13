@@ -13,6 +13,9 @@ lib-cov
 .DS_Store
 .ntvs_analysis.dat
 
+.jshintrc
+.npmignore
+
 # User-specific files
 *.suo
 *.user
