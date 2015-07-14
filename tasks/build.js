@@ -165,7 +165,17 @@ module.exports = function (grunt) {
     }
     
     function findModule(name) {
+        var prefix = _options.prefix, modulePrefix = _options.modulePrefix;
+        var isFullName = false;
+
         var modName = toAttribute(name);
+        
+        if((!prefix) && modulePrefix) {
+            isFullName = (name.substring(0, modulePrefix.length).toLowerCase() === modulePrefix.toLowerCase());
+            if (!isFullName) {
+                modName = modulePrefix + name;
+            }
+        }
         
         if (_foundModules[modName]) { return; }
         _foundModules[modName] = true;
@@ -179,7 +189,6 @@ module.exports = function (grunt) {
             return '\'' + str + '\'';
         }
         
-        var prefix = _options.prefix;
         var path = '';
         if (prefix) {
             if (name.substring(0, prefix.length + 1).toLowerCase() === prefix.toLowerCase() + '-') {
@@ -188,8 +197,7 @@ module.exports = function (grunt) {
                 path = name.substring(0, prefix.length).toLowerCase() + "-" + lcwords(name.substring(prefix.length));
             }
         } else {
-            var modulePrefix = _options.modulePrefix;
-            if (name.substring(0, modulePrefix.length).toLowerCase() === modulePrefix.toLowerCase()) {
+            if(isFullName) {
                 path = name.substring(modulePrefix.length);
             } else {
                 path = name;
