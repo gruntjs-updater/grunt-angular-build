@@ -1,6 +1,4 @@
-# grunt-angular-build v1.0.2 
-[![Build Status: Windows]
-(https://ci.appveyor.com/api/projects/status/8167g52uosfrdom1/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-angular-build/branch/master)
+# grunt-angular-build v1.0.2 [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/8167g52uosfrdom1/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-angular-build/branch/master)
 
 
 > Packages JavaScript files written in AngularJS
