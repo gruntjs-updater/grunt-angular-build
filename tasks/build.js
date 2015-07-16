@@ -44,20 +44,6 @@ module.exports = function (grunt) {
         configTask("modules", []);
         configTask("pkg", grunt.file.readJSON('package.json'));
         configTask("dist", 'dist');
-        configTask("html2js", {
-            dist: {
-                options: {
-                    module: null, // no bundle module for all the html2js templates
-                    base: '.'
-                },
-                files: [{
-                        expand: true,
-                        src: ['template/**/*.html'],
-                        ext: '.html.js'
-                    }]
-            }
-        }, true);
-
 
         //If arguments define what modules to build, build those. Else, everything
         if (this.args.length) {
