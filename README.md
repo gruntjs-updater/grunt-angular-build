@@ -1,5 +1,6 @@
 # grunt-angular-build v1.0.5 [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/8167g52uosfrdom1/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-angular-build/branch/master)
-
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
 
 > Packages JavaScript files written in AngularJS
 
@@ -71,3 +72,8 @@ grunt.initConfig({
   },
 });
 ```
+
+[npm-image]: https://img.shields.io/npm/v/grunt-angular-build.svg
+[npm-url]: https://npmjs.org/package/grunt-angular-build
+[downloads-image]: https://img.shields.io/npm/dm/grunt-angular-build.svg
+[downloads-url]: https://npmjs.org/package/grunt-angular-build
