@@ -45,7 +45,7 @@ Default value: `''`
 
 #### options.prefix
 Type: `String`
-Default value: `'sw'`
+Default value: `''`
 
 
 #### options.modulePrefix
