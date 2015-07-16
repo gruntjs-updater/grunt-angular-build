@@ -36,7 +36,7 @@ module.exports = function (grunt) {
         // Merge task-specific options with these defaults
         _options = this.options({
             filename: '',
-            prefix: 'sw',
+            prefix: '',
             modulePrefix: 'sw',
             moduleName: ''
         });

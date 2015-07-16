@@ -1,7 +1,7 @@
 {
     "name": "grunt-angular-build",
     "description": "Packages JavaScript files written in AngularJS",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "homepage": "https://github.com/mdarlea/grunt-angular-build",
     "author": {
         "name": "Michelle Darlea",
@@ -29,7 +29,8 @@
     },
   "dependencies": {
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-uglify": "^0.9.1"
+    "grunt-contrib-uglify": "^0.9.1",
+    "node-markdown": "0.1.1"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
